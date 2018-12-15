@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "jest": true
+  },
+  "extends": "airbnb", // This imports the rules from eslint-config-airbnb, a popular eslint config
+  "rules": {
+    // Airbnb-made config is nice, but for some things, we know better.
+    // The following are our overrides for demo purposes
+    "comma-dangle": ["error", "never"]
+  }
+}
