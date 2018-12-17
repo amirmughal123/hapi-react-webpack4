@@ -1,0 +1,79 @@
+box {
+  padding: 0 1.6rem;
+}
+
+.box .box {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.box .box-lr {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.box-tb {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.box .box-top {
+  margin-top: 2rem;
+}
+
+.box + .box {
+  margin-top: 1.6rem;
+}
+
+.box-lr + .box-lr {
+  padding-top: 0;
+}
+
+.box-flex {
+  display: flex;
+}
+
+.box-flex-aic {
+  align-items: center;
+}
+
+.box-float-right {
+  justify-content: flex-end;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.6rem;
+}
+
+.row + .row {
+  margin-top: 1.6rem;
+}
+
+.row .card-block + .card-block {
+  margin-top: 1rem;
+}
+
+.row-cv {
+  align-items: center;
+}
+
+.row-ch {
+  justify-content: center;
+}
+
+.row-hh {
+  height: 100%;
+  min-height: inherit;
+}
+
+.row-c .dropdown {
+  flex-grow: 1;
+}
+
+.modal-box-buttons {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+}

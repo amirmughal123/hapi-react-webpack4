@@ -1,0 +1,40 @@
+{
+  "name": "entrl-ui-kit",
+  "version": "1.0.0",
+  "author": "Entrl",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build-examples": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build": "rimraf ./build && mkdirp ./build && babel -d ./build ./src"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.0-beta.6",
+    "babel-preset-latest": "^6.24.1",
+    "mkdirp": "^0.5.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "^2.1.1",
+    "react-transition-group": "^2.5.0",
+    "rimraf": "^2.6.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "babel-core": "^7.0.0-bridge.0"
+  }
+}

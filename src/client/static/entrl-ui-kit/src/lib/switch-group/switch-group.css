@@ -1,0 +1,7 @@
+.switches-list-group-item:not(:first-child) {
+  margin-top: 0.3rem;
+}
+
+.switches-list-group-item label > span:first-child {
+  margin-right: 1rem;
+}

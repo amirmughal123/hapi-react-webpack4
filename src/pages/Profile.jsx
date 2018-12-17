@@ -15,7 +15,7 @@ class Profile extends Component {
     const { user } = this.props;
 
     return (
-      <div>
+      <div className="test">
         <h1>
           My Profile
         </h1>

@@ -39,7 +39,8 @@ const config = {
     assets: path.join(ROOT_PATH, WEB_ROOT_DIRNAME, ASSETS_DIRNAME),
     build: path.join(ROOT_PATH, WEB_ROOT_DIRNAME, BUILD_DIRNAME), // Do not keep any non-generated files here.
     source: path.join(ROOT_PATH, SOURCE_DIRNAME),
-    components: path.join(ROOT_PATH, SOURCE_DIRNAME, 'components'),
+    // components: path.join(ROOT_PATH, SOURCE_DIRNAME, 'components'),
+    components: path.join(ROOT_PATH, SOURCE_DIRNAME, 'client'),
     serverViews: path.join(ROOT_PATH, SOURCE_DIRNAME, 'server-views'),
     test: path.join(ROOT_PATH, '__tests__')
   },

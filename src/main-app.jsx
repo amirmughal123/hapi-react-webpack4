@@ -1,4 +1,6 @@
-import Nav from './components/nav';
+// import Nav from './components/nav';
+// import './main-app.css';
+import Nav from './client/apps/auth/src/app';
 
 // React must be in scope when using JSX because JSX is translated into React.createElement(...)
 const React = require('react');

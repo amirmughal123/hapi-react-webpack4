@@ -1,0 +1,30 @@
+.icon {
+  font-size: 0;
+}
+
+.alert-message-icon {
+  align-self: flex-start;
+  margin-right: 0.8rem;
+}
+
+.modal-close-icon {
+  cursor: pointer;
+  padding: 1.6rem;
+}
+
+.dropdown-arrow {
+  pointer-events: none;
+}
+
+.dropdown-arrow svg polyline {
+  transition: all 450ms ease-in-out;
+}
+
+
+.show-password svg path {
+  transition: fill 150ms ease-in-out;
+}
+
+.show-password.showed svg path {
+  fill: hsl(var(--primary-color));
+}

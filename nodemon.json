@@ -11,7 +11,7 @@
   "ignore": [
     ".idea",
     ".sass-cache",
-    "src/components/*",
+    "src/client/*",
     "public/*"
   ]
 }

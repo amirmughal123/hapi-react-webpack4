@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "RobotoMedium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/roboto/roboto-v18-latin-500.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v18-latin-500.woff") format("font-woff");
+}
+
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/roboto/roboto-v18-latin-regular.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v18-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/roboto/roboto-v18-latin-300.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-v18-latin-300.woff") format("woff");
+}
+
+span {
+  font-family: "Roboto";
+  vertical-align: middle;
+}
+
+.fw-medium {
+  font-family: "RobotoMedium";
+}
+
+.fw-regular {
+  font-family: "RobotoRegular";
+}
+
+.fw-light {
+  font-family: "RobotoLight";
+}
+
+.fs-24 {
+  font-size: 2.4rem;
+}
+
+.fs-22 {
+  font-size: 2.2rem;
+}
+
+.fs-20 {
+  font-size: 2rem;
+}
+
+.fs-18 {
+  font-size: 1.8rem;
+}
+
+.fs-16 {
+  font-size: 1.6rem;
+}
+
+.fs-15 {
+  font-size: 1.5rem;
+}
+
+.fs-14 {
+  font-size: 1.4rem;
+}
+
+.fs-13 {
+  font-size: 1.3rem;
+}
+
+.fs-12 {
+  font-size: 1.2rem;
+}
+
+.c-primary {
+  color: hsl(var(--primary-color));
+}
+
+.c-dark {
+  color: #040e28;
+}
+
+.c-medium {
+  color: #646d82;
+}
+
+.c-light {
+  color: #a6b1c2;
+}
+
+.c-white {
+  color: #fff;
+}

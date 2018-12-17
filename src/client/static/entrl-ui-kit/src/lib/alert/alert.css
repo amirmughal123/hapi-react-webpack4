@@ -1,0 +1,27 @@
+.cards-wrapper-alert .card-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  user-select: none;
+  padding: 1rem;
+}
+
+.alert-enter {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.alert-enter.alert-enter-active {
+  max-height: 80px;
+  transition: max-height 300ms ease-in-out;
+}
+
+.alert-exit {
+  max-height: 80px;
+}
+
+.alert-exit.alert-exit-active {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
+}

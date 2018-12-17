@@ -1,0 +1,39 @@
+.card-block {
+  background-color: #fff;
+  width: auto;
+  height: auto;
+  border-radius: 0.3rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+.card-block—width-39 {
+  width: 39rem;
+}
+
+.card-block > .box {
+  padding: 0;
+}
+
+.card—z-index-0 {
+  box-shadow: none;
+}
+
+.card—z-index-1 {
+  box-shadow: 0 0.08rem 0.2rem hsl(var(--gray), 90%);
+}
+
+.card—z-index-2 {
+  box-shadow: 0 0.2rem 0.5rem hsl(var(--gray), 90%);
+}
+
+.card—z-index-3 {
+  box-shadow: 0 0.2rem 1rem hsl(var(--gray), 90%);
+}
+
+.card—z-index-4 {
+  box-shadow: 0 0.3rem 1.6rem hsl(var(--gray), 90%);
+}
+
+.card—z-index-5 {
+  box-shadow: 0 0.4rem 2.1rem hsl(var(--gray), 90%);
+}

@@ -1,5 +1,8 @@
 {
   "app": {
-    "js": "/static/build/app-bundle-f5410bfb6959c0000c36.js"
+    "js": "/static/build/app-bundle-406e17bfbb2ecafe5571.js"
+  },
+  "": {
+    "json": "/static/build/ada562b89bddc9100052.hot-update.json"
   }
 }

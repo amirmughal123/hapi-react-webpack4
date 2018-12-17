@@ -1,0 +1,140 @@
+@font-face {
+	font-family: 'fontello';
+	src: url('fonts/fontello/fontello.eot?0000');
+	src: url('fonts/fontello/fontello.eot?0000#iefix') format('embedded-opentype'),
+	     url('fonts/fontello/fontello.woff2?0000') format('woff2'),
+	     url('fonts/fontello/fontello.woff?0000') format('font-woff'),
+	     url('fonts/fontello/fontello.ttf?0000') format('truetype'),
+	     url('fonts/fontello/fontello.svg?0000#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.text-input,
+.email-input,
+.password-input {
+  width: 100%;
+  border-radius: 0.4rem;
+  border: 0.1rem solid hsl(var(--gray), 90%);
+  padding: 2rem 3.6rem 0 1.6rem;
+  font-family: "RobotoRegular", serif;
+  font-size: 1.7rem;
+  outline: none;
+  transition: border-color 150ms ease-in-out;
+}
+
+.text-input {
+  height: var(--input-t-h);
+}
+
+.password-input {
+  height: var(--input-p-h);
+}
+
+.email-input {
+  height: var(--input-e-h);
+}
+
+.password-input[type="password"] {
+  font-family: "fontello", serif;
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  color: hsl(var(--gray), 30%);
+  letter-spacing: 0.4rem;
+  caret-color: hsla(0,0%,0%,0);
+}
+
+.text-input::selection,
+.email-input::selection,
+.password-input::selection {
+  background-color: hsl(var(--gray), 90%);
+}
+
+.text-input:focus,
+.email-input:focus,
+.password-input:focus {
+  border-color: hsl(var(--primary-color));
+}
+
+.text-input:disabled,
+.email-input:disabled,
+.password-input:disabled {
+  background-color: #f9fafc;
+  user-select: none;
+}
+
+.placeholder-input {
+  position: absolute;
+  left: 1.6rem;
+  pointer-events: none;
+  user-select: none;
+  font-family: "RobotoMedium";
+  font-size: 1.2rem;
+  color: hsl(var(--gray), 30%);
+  transform: translateY(-50%);
+  transition: all 150ms linear;
+}
+
+.placeholder-input::first-letter {
+  text-transform: capitalize;
+}
+
+.text-input:focus+.placeholder-input,
+.text-input:not(:placeholder-shown)+.placeholder-input,
+.email-input:focus+.placeholder-input,
+.email-input:not(:placeholder-shown)+.placeholder-input,
+.password-input:focus+.placeholder-input,
+.password-input:not(:placeholder-shown)+.placeholder-input {
+  transform: translateY(-120%);
+  font-size: 1.2rem;
+  color: hsl(var(--gray), 60%);
+}
+
+.input-text-wrapper,
+.input-password-wrapper,
+.input-email-wrapper {
+  position: relative; 
+}
+
+.input-text-wrapper {
+  --input-t-h: 6rem;
+}
+
+.input-password-wrapper {
+  --input-p-h: 6rem;
+}
+
+.input-email-wrapper {
+  --input-e-h: 6rem;
+}
+
+.input-text-wrapper .placeholder-input {
+  top: calc(var(--input-t-h) / 2);
+}
+
+.input-password-wrapper .placeholder-input {
+  top: calc(var(--input-p-h) / 2);
+}
+
+.input-email-wrapper .placeholder-input {
+  top: calc(var(--input-e-h) / 2);
+}
+
+.input-wrapper+.input-wrapper {
+  margin-top: 1rem;
+}
+
+.password-button {
+  --password-btn: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: calc((var(--input-p-h) - var(--password-btn)) / 2) 0.8rem;
+  cursor: pointer;
+}

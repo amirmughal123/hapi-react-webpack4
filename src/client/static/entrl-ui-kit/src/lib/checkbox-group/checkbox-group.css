@@ -1,0 +1,7 @@
+.checkboxes-list-group-item:not(:first-child) {
+  margin-top: 0.3rem;
+}
+
+.checkboxes-list-group-item label span {
+  margin-left: 1rem;
+}

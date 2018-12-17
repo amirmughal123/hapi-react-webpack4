@@ -1,0 +1,29 @@
+.navbar {
+  position: relative;
+  display: inline-block;
+  border-radius: 0.3rem;
+  padding: 0 4rem;
+  background-color: #fff;
+	margin-bottom: 3rem;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-slider {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 0.2rem;
+  background-color: hsl(var(--primary-color));
+  transition: 300ms linear;
+  border-radius: 0.3rem;
+  pointer-events: none;
+}
+
+.navbar—z-index-0 {
+  box-shadow: none;
+}

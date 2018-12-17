@@ -1,5 +1,6 @@
 const path = require('path');
 const config = require('./config/variables');
+const preRequest = require('./server/helpers/pre-request');
 const routes = [
   {
     method: 'GET',
@@ -29,7 +30,7 @@ const routes = [
   },
   {
     method: 'GET',
-    path: '/profile',
+    path: '/signup',
     handler(request, h) {
       // const user = request.state.user;
       const user = {
@@ -37,7 +38,7 @@ const routes = [
       };
       if (user) {
         return h.view('app', {
-          view: 'profile',
+          view: 'index',
           props: {
             user
           }

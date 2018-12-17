@@ -1,0 +1,27 @@
+.link {
+  font-size: initial;
+  display: block;
+  text-decoration: none;
+  font-family: "RobotoRegular";
+  cursor: pointer;
+}
+
+.link-di {
+  display: inline;
+}
+
+.link-ptb {
+  padding: 1.6rem 0;
+}
+
+.link-plr {
+  padding: 0 1.6rem;
+}
+
+.link-pb {
+  padding: 1.6rem;
+}
+
+.td-line {
+  text-decoration: underline;
+}

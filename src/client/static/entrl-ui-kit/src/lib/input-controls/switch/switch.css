@@ -1,0 +1,65 @@
+.switch-label {
+  display: block;
+  position: relative;
+  user-select: none;
+}
+
+.switch-label input {
+  position: absolute;
+  display: none;
+  opacity: 0
+}
+
+.switch-label input:disabled {
+  cursor: default;
+}
+
+.switch-label input:disabled + span {
+  cursor: default;
+  color: hsl(var(--gray), 90%);
+}
+
+.switch-label input:disabled ~ .switch-slider {
+  cursor: default;
+}
+
+.switch-label .switch-slider {
+  display: inline-block;
+  position: relative;
+  width: 3.8rem;
+  height: 1.8rem;
+  border: 0.2rem solid hsl(var(--gray), 90%);
+  background-color: transparent;
+  transition: all 150ms ease-in-out;
+  border-radius: 3.4rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.switch-label .switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  top: 50%;
+  left: 0;
+  margin: 0 0.2rem;
+  background-color: hsl(var(--gray), 90%);
+  transform: translateY(-50%);
+  transition: all 350ms ease-in-out;
+  border-radius: 50%;
+}
+
+.switch-label input:checked ~ .switch-slider {
+  background-color: hsla(var(--primary-color), 0.1);
+  border-color: hsl(var(--primary-color));
+}
+
+.switch-label input:checked ~ .switch-slider::before {
+  background-color: hsl(var(--primary-color));
+}
+
+.switch-label input:checked ~ .switch-slider:before {
+  -webkit-transform: translate(2rem, -50%);
+  transform: translate(2rem, -50%);
+}

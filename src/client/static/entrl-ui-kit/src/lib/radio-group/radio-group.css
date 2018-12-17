@@ -1,0 +1,7 @@
+.radio-list-group-item:not(:first-child) {
+  margin-top: 0.3rem;
+}
+
+.radio-list-group-item label span {
+  margin-left: 1rem;
+}

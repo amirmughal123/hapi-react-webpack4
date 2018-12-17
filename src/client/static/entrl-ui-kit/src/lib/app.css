@@ -1,0 +1,96 @@
+:root {
+    --gray: 222, 25%;
+    --error: 0, 100%, 66%;
+    --info: 214, 100%, 50%;
+    --important: 36, 100%, 59%;
+    --success: 157, 74%, 47%;
+    --violet: 304, 42%, 49%;
+
+    --primary-color: var(--info);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #f9fafc;
+}
+
+#root {
+    height: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul+ul {
+    margin-top: 1rem;
+}
+
+label span {
+    cursor: pointer;
+}
+
+.wrapper {
+    padding: 0 2rem;
+    font-size: 0;
+}
+
+.check-box::after,
+.radio-box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: hsl(var(--primary-color));
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    transition: all 100ms ease-in-out;
+}
+
+.check-box:active::after,
+.radio-box:active::after {
+    transform: translate(-50%, -50%) scale(1.33);
+    opacity: 0.25;
+}
+
+.check-box:disabled::after,
+.radio-box:disabled::after {
+    background-color: hsl(var(--gray), 90%);
+}
+
+.form-head {
+    padding: 2.85rem 0;
+    background-color: hsl(var(--gray), 98%);
+}
+
+.form-body {
+    padding: 2.85rem 0;
+}
+
+.bg-dark {
+    background-color: #16171a; /* 232526 */
+}
+
+.bg-light {
+    background-color: #fff;
+}
+
+input {
+    vertical-align: middle;
+}
